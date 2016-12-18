@@ -6,7 +6,6 @@ categories: angular2
 ---
 
 ## How to detect value change in ion-input
-
 Utiliser (input) plutôt que :
  * (change) qui ne se déclenche que sur perte du focus
  * (keypress) qui ne prend pas en compte les retours arrière
@@ -15,10 +14,10 @@ Utiliser (input) plutôt que :
 ```HTML
 <ion-input [(ngModel)]="myField" (input)="onChange($event.target.value)"></ion-input>
 ```
+
 ### Component 
 ```javascript
 onChange(value) {
     // value is the input content;
 }
 ```
-
